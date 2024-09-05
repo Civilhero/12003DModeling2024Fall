@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: roomcorners.ma
-//Last modified: Thu, Sep 05, 2024 02:16:12 PM
+//Last modified: Thu, Sep 05, 2024 02:21:07 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,23 +11,23 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "BB067B11-4CA9-2296-B83B-F0BDFFF0BE99";
+fileInfo "UUID" "F22DF9BF-476B-6DBD-48ED-A1915682C14D";
 createNode transform -s -n "persp";
 	rename -uid "1C116CF4-4F24-C76C-F1F9-6AB037DABCF8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.1966624911043597 7.8166985998842309 8.9912329055675162 ;
-	setAttr ".r" -type "double3" -33.562509479049751 15.233129168308828 -6.5927473067015599e-14 ;
-	setAttr ".rp" -type "double3" 4.9960036108132044e-16 0 1.7763568394002505e-15 ;
-	setAttr ".rpt" -type "double3" -2.2086079840500791e-15 1.6275702269650672e-15 -5.2778625507193753e-15 ;
+	setAttr ".t" -type "double3" 6.5871498729566422 7.421750321040812 6.8175375303895249 ;
+	setAttr ".r" -type "double3" -31.168535404687006 45.205902378336702 -4.2885236045954783e-14 ;
+	setAttr ".rp" -type "double3" -7.7715611723760958e-16 -4.4408920985006262e-16 -1.7763568394002505e-15 ;
+	setAttr ".rpt" -type "double3" -2.9223388991558453e-15 -3.2827450161874099e-16 -3.4323797249368876e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5F13F4E3-4FD9-632B-DA4C-B1BB500A4E97";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 11.028112134944006;
+	setAttr ".coi" 11.028112134944003;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.21786272489116731 1.7198462543408573 0.12456968207338548 ;
+	setAttr ".tp" -type "double3" -0.10917851139906976 1.7140714967066204 0.16916585997139499 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8534560F-4DBF-8F84-2F80-12B98321B794";
@@ -246,7 +246,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[1].y" -314.28570556640625;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "0EE1FD65-4C05-35A5-0702-36A244760E69";
+	rename -uid "C5B17A69-4EB4-ED98-39EE-C1BF0A345944";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
