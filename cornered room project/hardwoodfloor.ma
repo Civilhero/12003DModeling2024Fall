@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: roomcorners.ma
-//Last modified: Sun, Sep 08, 2024 03:13:10 PM
+//Name: hardwoodfloor.ma
+//Last modified: Sun, Sep 08, 2024 03:17:18 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,23 +11,23 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "642B7B7C-46A1-D860-CF7D-269837B3CCDC";
+fileInfo "UUID" "C0BCBDF4-44AE-678C-3B10-E5A6A62EE0D9";
 createNode transform -s -n "persp";
 	rename -uid "1C116CF4-4F24-C76C-F1F9-6AB037DABCF8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.1359791014437661 6.0338947799377642 5.3697362539600872 ;
-	setAttr ".r" -type "double3" -30.150648140928869 59.700505310303818 -5.6737080016043432e-14 ;
-	setAttr ".rp" -type "double3" -2.3592239273284576e-16 -2.4980018054066022e-16 1.7763568394002505e-15 ;
-	setAttr ".rpt" -type "double3" -1.3070203557344327e-15 3.6586108844012738e-15 -1.7694979554879553e-15 ;
+	setAttr ".t" -type "double3" 9.0020806797293567 3.4246642024705394 -0.9885579214936504 ;
+	setAttr ".r" -type "double3" 159.42524815652229 81.638961128935534 -179.99999999999997 ;
+	setAttr ".rp" -type "double3" 0 6.106226635438361e-16 -3.5527136788005009e-15 ;
+	setAttr ".rpt" -type "double3" -6.4821095213212087e-15 1.6563178067555944e-15 3.1397735806613174e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5F13F4E3-4FD9-632B-DA4C-B1BB500A4E97";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 14.48955925307186;
+	setAttr ".coi" 12.079047152112995;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1.6817618012007713 -1.2438531569039446 -0.95151315413386506 ;
+	setAttr ".tp" -type "double3" -2.1863043705816168 -0.82026479345318215 0.65582581976416621 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8534560F-4DBF-8F84-2F80-12B98321B794";
@@ -996,15 +996,11 @@ createNode lambert -n "floor_paint";
 createNode shadingEngine -n "lambert4SG";
 	rename -uid "0A7B4574-45AE-A6F9-D728-E4A0FF2F2593";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo5";
 	rename -uid "B8F62924-4A6A-90C2-A196-438F4FD285A6";
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "42274A37-4492-35CD-AA8C-1A87BB0FC842";
-	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "2FE18446-4CC7-6BB4-DCDC-64BD45202F15";
+	rename -uid "BEC9C1BE-45FE-62AF-A45D-83B24D07F7D4";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -721.1309237257841 -1534.3253358567858 ;
 	setAttr ".tgi[0].vh" -type "double2" 1777.3478129724274 107.67195339345864 ;
@@ -1021,6 +1017,9 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[3].x" 282.85714721679688;
 	setAttr ".tgi[0].ni[3].y" -932.85711669921875;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "534B16B8-4266-B66F-3AA3-4F981BFC45DD";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -1108,4 +1107,4 @@ connectAttr "pasted__groupId4.msg" ":initialShadingGroup.gn" -na;
 connectAttr "pasted__groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId13.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId15.msg" ":initialShadingGroup.gn" -na;
-// End of roomcorners.ma
+// End of hardwoodfloor.ma
