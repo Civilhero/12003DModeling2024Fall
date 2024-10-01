@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: WhiteBoxBois.ma
-//Last modified: Tue, Oct 01, 2024 02:24:15 PM
+//Last modified: Tue, Oct 01, 2024 02:24:54 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,23 +11,23 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "9C4DB146-4D6E-E22D-C290-C3BA0364D927";
+fileInfo "UUID" "0807C40B-4CEF-BFC5-7C90-8CB7C2030865";
 createNode transform -s -n "persp";
 	rename -uid "96CBDDB9-467C-8F8C-987D-B2A77066E26C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.360130561550667 2.6037341035238537 9.5401187993130456 ;
-	setAttr ".r" -type "double3" -7.1819222230885709 -48.293496643595475 3.5913685310136984e-13 ;
-	setAttr ".rp" -type "double3" 1.6653345369377348e-16 5.5511151231257827e-16 0 ;
-	setAttr ".rpt" -type "double3" -6.41181382926906e-17 2.0622923582128966e-15 3.526347645303525e-16 ;
+	setAttr ".t" -type "double3" -10.525273021026891 1.4904905147530607 9.5406708760219363 ;
+	setAttr ".r" -type "double3" -2.3939740743638214 -48.762365543047821 1.0551652335065593e-12 ;
+	setAttr ".rp" -type "double3" 1.4988010832439613e-15 0 3.5527136788005009e-15 ;
+	setAttr ".rpt" -type "double3" -2.9534925298488867e-15 2.1697980942406222e-15 -3.170725382224561e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "ED24C87E-4B87-42A2-72B5-9E91A2DED9FB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 15.296133260278623;
+	setAttr ".coi" 15.296133260278625;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.9697962092567991 0.69140848633651575 -0.55678482596689882 ;
+	setAttr ".tp" -type "double3" 0.96710625084240043 0.85156225600302815 -0.53348824858402999 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "A84D820C-4C7F-99B2-539A-2085ADD13A11";
@@ -4353,7 +4353,7 @@ createNode polyCube -n "polyCube5";
 	rename -uid "2F146177-4792-D156-8D57-2D9A8AD6CF3D";
 	setAttr ".cuv" 4;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "505C1EB8-4FC6-96D9-A7FE-2B9E86A81082";
+	rename -uid "C152FDA7-4F3D-BFAC-8484-D89923278A67";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
